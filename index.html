@@ -12,6 +12,13 @@
     <main>
       <form>
         <div>
+          <label for="income1">Amount to Split</label>
+          <div style="display: flex; align-items: center">
+            <span class="input__prefix">$</span
+            ><input id="amount" type="number" placeholder="0.00" />
+          </div>
+        </div>
+        <div>
           <label for="income1">Income 1</label>
           <div style="display: flex; align-items: center">
             <span class="input__prefix">$</span
@@ -25,10 +32,14 @@
             ><input id="income2" type="number" placeholder="0.00" />
           </div>
         </div>
-        <div><span>Person 1 Pays</span><span>$1,213.11</span></div>
-        <div><span>Person 2 Pays</span><span>$1,213.11</span></div>
+        <div class="portion">
+          <span>Person 1 Pays</span><span>$1,213.11</span>
+        </div>
+        <div class="portion">
+          <span>Person 2 Pays</span><span>$1,213.11</span>
+        </div>
       </form>
     </main>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

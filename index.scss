@@ -1,8 +1,12 @@
-$navy: #1a102e;
+/* Variables */
+
+$dark: #1a102e;
 $green-1: #249833;
 $green-2: #7adf10;
+$light: #E4E8ED;
+$input-border: 2px solid $green-1;
 
-$input-border: 1px solid $navy;
+/* Document */
 
 * {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -11,6 +15,13 @@ $input-border: 1px solid $navy;
 html {
     font-size: 10px;
 }
+
+body {
+    background-color: $dark;
+    color: $light;
+}
+
+/* Form Inputs */
 
 form {
     display: flex;
@@ -25,26 +36,27 @@ label {
     font-size: 1.25rem;
 }
 
-input {
-    display: block;
-    padding: 1rem;
+input, .input__prefix {
+    padding: 1rem;    
     font-size: 1.5rem;
-    font-weight: 400;
     line-height: 1.5;
-    border: $input-border;
-    border-radius: 0 4px 4px 0;
 }
 
-input:focus-visible {
-    outline: none;
-    border: 1px solid $green-1;
+input {
+    display: block;
+    font-weight: 400;
+    border: $input-border;
+    border-radius: 0 4px 4px 0;
+    background-color: $dark;
+    color: $light;
+    &:hover, &:focus-visible, &:focus-within, &:active {
+        outline: none;
+        filter: brightness(1.15);
+    }
 }
 
 .input__prefix {
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 500;
     border-top: $input-border;
     border-left: $input-border;
     border-bottom: $input-border;
@@ -52,4 +64,26 @@ input:focus-visible {
     width: 3rem;
     display: flex;
     justify-content: center;
+    background-color: $green-1;
+    color: $light;
+}
+
+/* Portions */
+
+.portion {
+    padding: 1rem;
+    border: 1px solid $light;
+    background-color: $green-1;
+    color: $dark;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span:last-child {
+        font-size: 2rem;
+        font-weight: 900;
+    }
 }

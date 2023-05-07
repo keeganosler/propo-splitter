@@ -1,3 +1,5 @@
+/* Variables */
+/* Document */
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -6,6 +8,12 @@ html {
   font-size: 10px;
 }
 
+body {
+  background-color: #1a102e;
+  color: #E4E8ED;
+}
+
+/* Form Inputs */
 form {
   display: flex;
   flex-direction: column;
@@ -19,31 +27,53 @@ label {
   font-size: 1.25rem;
 }
 
-input {
-  display: block;
+input, .input__prefix {
   padding: 1rem;
   font-size: 1.5rem;
-  font-weight: 400;
   line-height: 1.5;
-  border: 1px solid #1a102e;
-  border-radius: 0 4px 4px 0;
 }
 
-input:focus-visible {
+input {
+  display: block;
+  font-weight: 400;
+  border: 2px solid #249833;
+  border-radius: 0 4px 4px 0;
+  background-color: #1a102e;
+  color: #E4E8ED;
+}
+input:hover, input:focus-visible, input:focus-within, input:active {
   outline: none;
-  border: 1px solid #249833;
+  filter: brightness(1.15);
 }
 
 .input__prefix {
-  padding: 1rem;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.5;
-  border-top: 1px solid #1a102e;
-  border-left: 1px solid #1a102e;
-  border-bottom: 1px solid #1a102e;
+  font-weight: 500;
+  border-top: 2px solid #249833;
+  border-left: 2px solid #249833;
+  border-bottom: 2px solid #249833;
   border-radius: 4px 0 0 4px;
   width: 3rem;
   display: flex;
   justify-content: center;
+  background-color: #249833;
+  color: #E4E8ED;
+}
+
+/* Portions */
+.portion {
+  padding: 1rem;
+  border: 1px solid #E4E8ED;
+  background-color: #249833;
+  color: #1a102e;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.portion span:last-child {
+  font-size: 2rem;
+  font-weight: 900;
 }/*# sourceMappingURL=index.css.map */
