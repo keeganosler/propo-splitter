@@ -1,0 +1,55 @@
+$navy: #1a102e;
+$green-1: #249833;
+$green-2: #7adf10;
+
+$input-border: 1px solid $navy;
+
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+label {
+    margin-left: 0.5rem;
+    margin-bottom: 0.75rem;
+    display: inline-block;
+    font-size: 1.25rem;
+}
+
+input {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: $input-border;
+    border-radius: 0 4px 4px 0;
+}
+
+input:focus-visible {
+    outline: none;
+    border: 1px solid $green-1;
+}
+
+.input__prefix {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-top: $input-border;
+    border-left: $input-border;
+    border-bottom: $input-border;
+    border-radius: 4px 0 0 4px;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+}
