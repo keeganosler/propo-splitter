@@ -9,7 +9,7 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <main>
+    <main class="page__container">
       <form>
         <div>
           <label for="income1">Amount to Split</label>
@@ -32,13 +32,15 @@
             ><input id="income2" type="number" placeholder="0.00" />
           </div>
         </div>
+      </form>
+      <div class="portions__container">
         <div class="portion">
           <span>Person 1 Pays</span><span>$1,213.11</span>
         </div>
         <div class="portion">
           <span>Person 2 Pays</span><span>$1,213.11</span>
         </div>
-      </form>
+      </div>
     </main>
     <script src="./index.js"></script>
   </body>

@@ -21,6 +21,24 @@ body {
     color: $light;
 }
 
+.page__container {
+    padding: 4rem 2rem;
+    display: flex;
+    // flex-direction: row;
+    // gap: 8rem;
+
+    // form, .portions__container {
+    //     margin: auto;
+    //     width: 50%;
+    //     height: 100%;
+    // }
+    flex-direction: column;
+    gap: 4rem;
+    form, .portions__container {
+        height: 35vh;
+    }
+}
+
 /* Form Inputs */
 
 form {
@@ -44,6 +62,7 @@ input, .input__prefix {
 
 input {
     display: block;
+    width: 100%;
     font-weight: 400;
     border: $input-border;
     border-radius: 0 4px 4px 0;
@@ -61,7 +80,7 @@ input {
     border-left: $input-border;
     border-bottom: $input-border;
     border-radius: 4px 0 0 4px;
-    width: 3rem;
+    width: 4rem;
     display: flex;
     justify-content: center;
     background-color: $green-1;
@@ -69,6 +88,12 @@ input {
 }
 
 /* Portions */
+
+.portions__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
 
 .portion {
     padding: 1rem;
