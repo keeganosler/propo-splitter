@@ -1,7 +1,7 @@
 /* Variables */
 /* Document */
 * {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html {
@@ -9,25 +9,33 @@ html {
 }
 
 body {
-  background-color: #1a102e;
-  color: #E4E8ED;
+  background-color: hsl(0, 0%, 94%);
+  color: hsl(0, 1%, 44%);
+  height: 100%;
+  margin: 2rem;
 }
 
 .page__container {
-  padding: 4rem 2rem;
+  position: relative;
+  top: 10vh;
+  margin-right: auto;
+  margin-left: auto;
+  background: hsl(0, 0%, 100%);
+  padding: 2rem 4rem;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-}
-.page__container form, .page__container .portions__container {
-  height: 35vh;
+  gap: 2rem;
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 8rem;
+  max-width: 400px;
+  box-shadow: 0 4px 8px 0 hsl(0, 0%, 86%), 0 4px 8px 0 hsl(0, 0%, 86%);
 }
 
 /* Form Inputs */
 form {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 label {
@@ -35,6 +43,8 @@ label {
   margin-bottom: 0.75rem;
   display: inline-block;
   font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 input, .input__prefix {
@@ -45,52 +55,47 @@ input, .input__prefix {
 
 input {
   display: block;
-  width: 100%;
   font-weight: 400;
-  border: 2px solid #249833;
+  border: 1px solid hsl(0, 0%, 86%);
   border-radius: 0 4px 4px 0;
-  background-color: #1a102e;
-  color: #E4E8ED;
 }
 input:hover, input:focus-visible, input:focus-within, input:active {
   outline: none;
-  filter: brightness(1.15);
 }
 
 .input__prefix {
-  font-weight: 500;
-  border-top: 2px solid #249833;
-  border-left: 2px solid #249833;
-  border-bottom: 2px solid #249833;
+  font-weight: 700;
+  border-top: 1px solid hsl(0, 0%, 86%);
+  border-left: 1px solid hsl(0, 0%, 86%);
+  border-bottom: 1px solid hsl(0, 0%, 86%);
   border-radius: 4px 0 0 4px;
   width: 4rem;
   display: flex;
   justify-content: center;
-  background-color: #249833;
-  color: #E4E8ED;
+  background-color: hsl(0, 0%, 86%);
 }
 
 /* Portions */
 .portions__container {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 1rem;
 }
 
 .portion {
-  padding: 1rem;
-  border: 1px solid #E4E8ED;
-  background-color: #249833;
-  color: #1a102e;
-  border-radius: 4px;
-  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  color: hsl(259, 100%, 65%);
   font-weight: 600;
   line-height: 1.5;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 2rem;
+  font-size: 2rem;
 }
 .portion span:last-child {
   font-size: 2rem;
   font-weight: 900;
+  color: hsl(0, 0%, 8%);
+  font-size: 4rem;
 }/*# sourceMappingURL=index.css.map */
