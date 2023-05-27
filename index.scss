@@ -64,8 +64,8 @@ input, .input__prefix {
 }
 
 input {
-    display: block;
     font-weight: 400;
+    max-width: 300px;
     border: 1px solid $light-grey;
     border-radius: 0 4px 4px 0;
     &:hover, &:focus-visible, &:focus-within, &:active {
