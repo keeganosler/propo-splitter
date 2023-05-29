@@ -26,14 +26,11 @@ body {
 
 .page__container {
     position: relative;
-    top: 10vh;
+    top: 10rem;
     margin-right: auto;
     margin-left: auto;
     background: $white;
-    padding: 2rem 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    padding: 1rem 2rem;
     border-radius: 1.5rem;
     border-bottom-right-radius: 8rem;
     max-width: 400px;
@@ -64,8 +61,8 @@ input, .input__prefix {
 }
 
 input {
+    width: 100%;
     font-weight: 400;
-    max-width: 300px;
     border: 1px solid $light-grey;
     border-radius: 0 4px 4px 0;
     &:hover, &:focus-visible, &:focus-within, &:active {
@@ -87,26 +84,18 @@ input {
 
 /* Portions */
 
-.portions__container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
 .portion {
-    margin: 0 0.5rem;
+    &:first-child {
+        margin-top: 1rem;
+    }
     color: $purple;
     font-weight: 600;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2rem;
     font-size: 2rem; 
     span:last-child {
-        font-size: 2rem;
         font-weight: 900;
         color: $black;
         font-size: 4rem;
+        margin-left: 1rem;
     }
 }
